@@ -1,0 +1,22 @@
+{
+  "run_id": "c579fe39-7a66-4930-8c50-5b87052f89cb",
+  "batch_id": "batch_late_arriving_batch",
+  "start_time": "2026-11-12T12:16:28.445494+00:00",
+  "end_time": "2026-11-12T12:16:28.490761+00:00",
+  "duration_ms": 45.06,
+  "input_records_count": 150,
+  "valid_records_count": 150,
+  "rejected_records_count": 0,
+  "published_records_count": 150,
+  "deduped_records_count": 0,
+  "partitions_affected": [
+    "2026-10-15",
+    "2026-10-16",
+    "2026-10-17",
+    "2026-10-18",
+    "2026-10-19"
+  ],
+  "status": "SUCCESS",
+  "error_summary": null,
+  "quarantine_breakdown": {}
+}

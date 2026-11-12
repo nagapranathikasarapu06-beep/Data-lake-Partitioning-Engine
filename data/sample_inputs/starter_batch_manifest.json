@@ -1,0 +1,9 @@
+{
+  "total_generated": 500,
+  "expected_valid": 486,
+  "expected_duplicates": 5,
+  "expected_invalid": 9,
+  "random_seed": 42,
+  "start_date": "2026-11-01",
+  "days_span": 5
+}

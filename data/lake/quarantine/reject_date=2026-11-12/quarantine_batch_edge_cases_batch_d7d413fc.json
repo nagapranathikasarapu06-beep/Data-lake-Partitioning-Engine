@@ -1,0 +1,50 @@
+[
+  {
+    "raw_record": "{\"transaction_id\": \"TX_EDGE_001\", \"merchant_id\": \"MERC_0001\", \"customer_id\": \"CUST_9999\", \"amount\": 100.5, \"currency\": \"USD\", \"status\": \"COMPLETED\", \"payment_method\": \"CREDIT_CARD\", \"transaction_timestamp\": \"2026-11-05T12:00:00Z\"}",
+    "rejection_reason": "DUPLICATE_KEY",
+    "error_details": "Duplicate transaction_id 'TX_EDGE_001' detected",
+    "run_id": "d7d413fc-e802-46dd-b102-8d93c97d8430",
+    "source_file": "edge_cases_batch.json",
+    "rejected_at": "2026-11-12T12:16:28.418364+00:00"
+  },
+  {
+    "raw_record": "{\"transaction_id\": \"TX_EDGE_002\", \"merchant_id\": \"MERC_0001\", \"customer_id\": \"CUST_9999\", \"amount\": null, \"currency\": \"USD\", \"status\": \"COMPLETED\", \"payment_method\": \"CREDIT_CARD\", \"transaction_timestamp\": \"2026-11-05T12:05:00Z\"}",
+    "rejection_reason": "MISSING_REQUIRED_FIELD",
+    "error_details": "Missing required fields: ['amount']",
+    "run_id": "d7d413fc-e802-46dd-b102-8d93c97d8430",
+    "source_file": "edge_cases_batch.json",
+    "rejected_at": "2026-11-12T12:16:28.418364+00:00"
+  },
+  {
+    "raw_record": "{\"transaction_id\": \"TX_EDGE_003\", \"merchant_id\": \"MERC_0001\", \"customer_id\": \"CUST_9999\", \"amount\": -50.0, \"currency\": \"USD\", \"status\": \"COMPLETED\", \"payment_method\": \"CREDIT_CARD\", \"transaction_timestamp\": \"2026-11-05T12:10:00Z\"}",
+    "rejection_reason": "INVALID_AMOUNT",
+    "error_details": "1 validation error for RawTransaction\namount\n  Value error, amount must be strictly positive (> 0.0), got -50.0 [type=value_error, input_value=-50.0, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error",
+    "run_id": "d7d413fc-e802-46dd-b102-8d93c97d8430",
+    "source_file": "edge_cases_batch.json",
+    "rejected_at": "2026-11-12T12:16:28.418364+00:00"
+  },
+  {
+    "raw_record": "{\"transaction_id\": \"TX_EDGE_004\", \"merchant_id\": \"MERC_NON_EXISTENT\", \"customer_id\": \"CUST_9999\", \"amount\": 25.0, \"currency\": \"USD\", \"status\": \"COMPLETED\", \"payment_method\": \"CREDIT_CARD\", \"transaction_timestamp\": \"2026-11-05T12:15:00Z\"}",
+    "rejection_reason": "FOREIGN_KEY_VIOLATION",
+    "error_details": "Merchant 'MERC_NON_EXISTENT' does not exist in active reference directory",
+    "run_id": "d7d413fc-e802-46dd-b102-8d93c97d8430",
+    "source_file": "edge_cases_batch.json",
+    "rejected_at": "2026-11-12T12:16:28.418364+00:00"
+  },
+  {
+    "raw_record": "{\"transaction_id\": \"TX_EDGE_005\", \"merchant_id\": \"MERC_0001\", \"customer_id\": \"CUST_9999\", \"amount\": 42.0, \"currency\": \"BITCOIN\", \"status\": \"COMPLETED\", \"payment_method\": \"CREDIT_CARD\", \"transaction_timestamp\": \"2026-11-05T12:20:00Z\"}",
+    "rejection_reason": "INVALID_CURRENCY",
+    "error_details": "1 validation error for RawTransaction\ncurrency\n  Value error, currency must be one of {'USD', 'EUR', 'JPY', 'CAD', 'GBP', 'AUD'}, got BITCOIN [type=value_error, input_value='BITCOIN', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error",
+    "run_id": "d7d413fc-e802-46dd-b102-8d93c97d8430",
+    "source_file": "edge_cases_batch.json",
+    "rejected_at": "2026-11-12T12:16:28.418364+00:00"
+  },
+  {
+    "raw_record": "{\"transaction_id\": \"TX_EDGE_006\", \"merchant_id\": \"MERC_0001\", \"customer_id\": \"CUST_9999\", \"amount\": 10.0, \"currency\": \"USD\", \"status\": \"COMPLETED\", \"payment_method\": \"CREDIT_CARD\", \"transaction_timestamp\": \"INVALID-DATE-STRING\"}",
+    "rejection_reason": "INVALID_TIMESTAMP",
+    "error_details": "1 validation error for RawTransaction\ntransaction_timestamp\n  Value error, transaction_timestamp must be valid ISO-8601, got 'INVALID-DATE-STRING': Invalid isoformat string: 'INVALID-DATE-STRING' [type=value_error, input_value='INVALID-DATE-STRING', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error",
+    "run_id": "d7d413fc-e802-46dd-b102-8d93c97d8430",
+    "source_file": "edge_cases_batch.json",
+    "rejected_at": "2026-11-12T12:16:28.418364+00:00"
+  }
+]

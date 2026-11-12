@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "data-lake-partitioning-engine"
+version = "1.0.0"
+description = "Time-Partitioned Data Lake with Partition Pruning, File Sizing Strategy & Compaction Engine"
+authors = [
+    { name = "Associate AI Forward Deployed Engineer", email = "engineer@example.com" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pyarrow>=14.0.0",
+    "pandas>=2.0.0",
+    "pydantic>=2.0.0",
+    "numpy>=1.24.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+]

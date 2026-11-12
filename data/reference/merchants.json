@@ -1,0 +1,142 @@
+[
+  {
+    "merchant_id": "MERC_0001",
+    "merchant_name": "Global Retail Partner 1",
+    "country_code": "JP",
+    "status": "ACTIVE",
+    "created_at": "2025-01-01T00:00:00Z"
+  },
+  {
+    "merchant_id": "MERC_0002",
+    "merchant_name": "Global Retail Partner 2",
+    "country_code": "US",
+    "status": "ACTIVE",
+    "created_at": "2025-01-01T00:00:00Z"
+  },
+  {
+    "merchant_id": "MERC_0003",
+    "merchant_name": "Global Retail Partner 3",
+    "country_code": "US",
+    "status": "ACTIVE",
+    "created_at": "2025-01-01T00:00:00Z"
+  },
+  {
+    "merchant_id": "MERC_0004",
+    "merchant_name": "Global Retail Partner 4",
+    "country_code": "JP",
+    "status": "ACTIVE",
+    "created_at": "2025-01-01T00:00:00Z"
+  },
+  {
+    "merchant_id": "MERC_0005",
+    "merchant_name": "Global Retail Partner 5",
+    "country_code": "DE",
+    "status": "ACTIVE",
+    "created_at": "2025-01-01T00:00:00Z"
+  },
+  {
+    "merchant_id": "MERC_0006",
+    "merchant_name": "Global Retail Partner 6",
+    "country_code": "GB",
+    "status": "ACTIVE",
+    "created_at": "2025-01-01T00:00:00Z"
+  },
+  {
+    "merchant_id": "MERC_0007",
+    "merchant_name": "Global Retail Partner 7",
+    "country_code": "GB",
+    "status": "ACTIVE",
+    "created_at": "2025-01-01T00:00:00Z"
+  },
+  {
+    "merchant_id": "MERC_0008",
+    "merchant_name": "Global Retail Partner 8",
+    "country_code": "GB",
+    "status": "ACTIVE",
+    "created_at": "2025-01-01T00:00:00Z"
+  },
+  {
+    "merchant_id": "MERC_0009",
+    "merchant_name": "Global Retail Partner 9",
+    "country_code": "JP",
+    "status": "ACTIVE",
+    "created_at": "2025-01-01T00:00:00Z"
+  },
+  {
+    "merchant_id": "MERC_0010",
+    "merchant_name": "Global Retail Partner 10",
+    "country_code": "US",
+    "status": "ACTIVE",
+    "created_at": "2025-01-01T00:00:00Z"
+  },
+  {
+    "merchant_id": "MERC_0011",
+    "merchant_name": "Global Retail Partner 11",
+    "country_code": "JP",
+    "status": "ACTIVE",
+    "created_at": "2025-01-01T00:00:00Z"
+  },
+  {
+    "merchant_id": "MERC_0012",
+    "merchant_name": "Global Retail Partner 12",
+    "country_code": "JP",
+    "status": "ACTIVE",
+    "created_at": "2025-01-01T00:00:00Z"
+  },
+  {
+    "merchant_id": "MERC_0013",
+    "merchant_name": "Global Retail Partner 13",
+    "country_code": "CA",
+    "status": "ACTIVE",
+    "created_at": "2025-01-01T00:00:00Z"
+  },
+  {
+    "merchant_id": "MERC_0014",
+    "merchant_name": "Global Retail Partner 14",
+    "country_code": "US",
+    "status": "ACTIVE",
+    "created_at": "2025-01-01T00:00:00Z"
+  },
+  {
+    "merchant_id": "MERC_0015",
+    "merchant_name": "Global Retail Partner 15",
+    "country_code": "CA",
+    "status": "ACTIVE",
+    "created_at": "2025-01-01T00:00:00Z"
+  },
+  {
+    "merchant_id": "MERC_0016",
+    "merchant_name": "Global Retail Partner 16",
+    "country_code": "FR",
+    "status": "ACTIVE",
+    "created_at": "2025-01-01T00:00:00Z"
+  },
+  {
+    "merchant_id": "MERC_0017",
+    "merchant_name": "Global Retail Partner 17",
+    "country_code": "US",
+    "status": "ACTIVE",
+    "created_at": "2025-01-01T00:00:00Z"
+  },
+  {
+    "merchant_id": "MERC_0018",
+    "merchant_name": "Global Retail Partner 18",
+    "country_code": "US",
+    "status": "SUSPENDED",
+    "created_at": "2025-01-01T00:00:00Z"
+  },
+  {
+    "merchant_id": "MERC_0019",
+    "merchant_name": "Global Retail Partner 19",
+    "country_code": "US",
+    "status": "SUSPENDED",
+    "created_at": "2025-01-01T00:00:00Z"
+  },
+  {
+    "merchant_id": "MERC_0020",
+    "merchant_name": "Global Retail Partner 20",
+    "country_code": "GB",
+    "status": "ACTIVE",
+    "created_at": "2025-01-01T00:00:00Z"
+  }
+]

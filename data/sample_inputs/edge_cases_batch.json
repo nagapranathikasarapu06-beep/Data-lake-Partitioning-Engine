@@ -1,0 +1,82 @@
+[
+  {
+    "transaction_id": "TX_EDGE_001",
+    "merchant_id": "MERC_0001",
+    "customer_id": "CUST_9999",
+    "amount": 100.5,
+    "currency": "USD",
+    "status": "COMPLETED",
+    "payment_method": "CREDIT_CARD",
+    "transaction_timestamp": "2026-11-05T12:00:00Z"
+  },
+  {
+    "transaction_id": "TX_EDGE_001",
+    "merchant_id": "MERC_0001",
+    "customer_id": "CUST_9999",
+    "amount": 100.5,
+    "currency": "USD",
+    "status": "COMPLETED",
+    "payment_method": "CREDIT_CARD",
+    "transaction_timestamp": "2026-11-05T12:00:00Z"
+  },
+  {
+    "transaction_id": "TX_EDGE_002",
+    "merchant_id": "MERC_0001",
+    "customer_id": "CUST_9999",
+    "amount": null,
+    "currency": "USD",
+    "status": "COMPLETED",
+    "payment_method": "CREDIT_CARD",
+    "transaction_timestamp": "2026-11-05T12:05:00Z"
+  },
+  {
+    "transaction_id": "TX_EDGE_003",
+    "merchant_id": "MERC_0001",
+    "customer_id": "CUST_9999",
+    "amount": -50.0,
+    "currency": "USD",
+    "status": "COMPLETED",
+    "payment_method": "CREDIT_CARD",
+    "transaction_timestamp": "2026-11-05T12:10:00Z"
+  },
+  {
+    "transaction_id": "TX_EDGE_004",
+    "merchant_id": "MERC_NON_EXISTENT",
+    "customer_id": "CUST_9999",
+    "amount": 25.0,
+    "currency": "USD",
+    "status": "COMPLETED",
+    "payment_method": "CREDIT_CARD",
+    "transaction_timestamp": "2026-11-05T12:15:00Z"
+  },
+  {
+    "transaction_id": "TX_EDGE_005",
+    "merchant_id": "MERC_0001",
+    "customer_id": "CUST_9999",
+    "amount": 42.0,
+    "currency": "BITCOIN",
+    "status": "COMPLETED",
+    "payment_method": "CREDIT_CARD",
+    "transaction_timestamp": "2026-11-05T12:20:00Z"
+  },
+  {
+    "transaction_id": "TX_EDGE_006",
+    "merchant_id": "MERC_0001",
+    "customer_id": "CUST_9999",
+    "amount": 10.0,
+    "currency": "USD",
+    "status": "COMPLETED",
+    "payment_method": "CREDIT_CARD",
+    "transaction_timestamp": "INVALID-DATE-STRING"
+  },
+  {
+    "transaction_id": "TX_EDGE_007",
+    "merchant_id": "MERC_0002",
+    "customer_id": "CUST_8888",
+    "amount": 0.01,
+    "currency": "EUR",
+    "status": "COMPLETED",
+    "payment_method": "DEBIT_CARD",
+    "transaction_timestamp": "2026-11-05T12:30:00Z"
+  }
+]

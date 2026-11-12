@@ -1,0 +1,114 @@
+[
+  {
+    "raw_record": "{\"transaction_id\": \"TX_START_INV_207ae1043873\", \"merchant_id\": \"MERC_0010\", \"customer_id\": \"CUST_2697\", \"amount\": 94.5, \"currency\": \"USD\", \"status\": \"COMPLETED\", \"payment_method\": \"CREDIT_CARD\", \"transaction_timestamp\": \"NOT_A_TIMESTAMP_CORRUPT\"}",
+    "rejection_reason": "INVALID_TIMESTAMP",
+    "error_details": "1 validation error for RawTransaction\ntransaction_timestamp\n  Value error, transaction_timestamp must be valid ISO-8601, got 'NOT_A_TIMESTAMP_CORRUPT': Invalid isoformat string: 'NOT_A_TIMESTAMP_CORRUPT' [type=value_error, input_value='NOT_A_TIMESTAMP_CORRUPT', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error",
+    "run_id": "2400bd71-47d5-4790-84fa-e62c7fc1bb69",
+    "source_file": "starter_batch.json",
+    "rejected_at": "2026-11-12T12:16:28.323274+00:00"
+  },
+  {
+    "raw_record": "{\"transaction_id\": \"TX_START_42_00000025\", \"merchant_id\": \"MERC_0011\", \"customer_id\": \"CUST_5564\", \"amount\": 432.85, \"currency\": \"GBP\", \"status\": \"COMPLETED\", \"payment_method\": \"DIGITAL_WALLET\", \"transaction_timestamp\": \"2026-11-02T04:07:35Z\"}",
+    "rejection_reason": "DUPLICATE_KEY",
+    "error_details": "Duplicate transaction_id 'TX_START_42_00000025' detected",
+    "run_id": "2400bd71-47d5-4790-84fa-e62c7fc1bb69",
+    "source_file": "starter_batch.json",
+    "rejected_at": "2026-11-12T12:16:28.323274+00:00"
+  },
+  {
+    "raw_record": "{\"transaction_id\": \"TX_START_42_00000075\", \"merchant_id\": \"MERC_0013\", \"customer_id\": \"CUST_7498\", \"amount\": 471.03, \"currency\": \"EUR\", \"status\": \"COMPLETED\", \"payment_method\": \"DIGITAL_WALLET\", \"transaction_timestamp\": \"2026-11-02T21:25:55Z\"}",
+    "rejection_reason": "DUPLICATE_KEY",
+    "error_details": "Duplicate transaction_id 'TX_START_42_00000075' detected",
+    "run_id": "2400bd71-47d5-4790-84fa-e62c7fc1bb69",
+    "source_file": "starter_batch.json",
+    "rejected_at": "2026-11-12T12:16:28.323274+00:00"
+  },
+  {
+    "raw_record": "{\"transaction_id\": \"TX_START_INV_51c006f3bbe1\", \"merchant_id\": \"MERC_0020\", \"customer_id\": \"CUST_5106\", \"amount\": 81.87, \"currency\": \"FAKE_CURRENCY\", \"status\": \"COMPLETED\", \"payment_method\": \"CREDIT_CARD\", \"transaction_timestamp\": \"2026-11-01T21:04:18Z\"}",
+    "rejection_reason": "INVALID_CURRENCY",
+    "error_details": "1 validation error for RawTransaction\ncurrency\n  Value error, currency must be one of {'USD', 'EUR', 'JPY', 'CAD', 'GBP', 'AUD'}, got FAKE_CURRENCY [type=value_error, input_value='FAKE_CURRENCY', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error",
+    "run_id": "2400bd71-47d5-4790-84fa-e62c7fc1bb69",
+    "source_file": "starter_batch.json",
+    "rejected_at": "2026-11-12T12:16:28.324276+00:00"
+  },
+  {
+    "raw_record": "{\"transaction_id\": \"TX_START_INV_726afbfc3b21\", \"merchant_id\": \"MERC_DOES_NOT_EXIST_9999\", \"customer_id\": \"CUST_8033\", \"amount\": 61.61, \"currency\": \"USD\", \"status\": \"COMPLETED\", \"payment_method\": \"CREDIT_CARD\", \"transaction_timestamp\": \"2026-11-01T11:20:22Z\"}",
+    "rejection_reason": "FOREIGN_KEY_VIOLATION",
+    "error_details": "Merchant 'MERC_DOES_NOT_EXIST_9999' does not exist in active reference directory",
+    "run_id": "2400bd71-47d5-4790-84fa-e62c7fc1bb69",
+    "source_file": "starter_batch.json",
+    "rejected_at": "2026-11-12T12:16:28.325272+00:00"
+  },
+  {
+    "raw_record": "{\"transaction_id\": \"TX_START_INV_83a2eaf55d23\", \"merchant_id\": \"MERC_DOES_NOT_EXIST_9999\", \"customer_id\": \"CUST_4871\", \"amount\": 15.59, \"currency\": \"USD\", \"status\": \"COMPLETED\", \"payment_method\": \"CREDIT_CARD\", \"transaction_timestamp\": \"2026-11-04T23:11:58Z\"}",
+    "rejection_reason": "FOREIGN_KEY_VIOLATION",
+    "error_details": "Merchant 'MERC_DOES_NOT_EXIST_9999' does not exist in active reference directory",
+    "run_id": "2400bd71-47d5-4790-84fa-e62c7fc1bb69",
+    "source_file": "starter_batch.json",
+    "rejected_at": "2026-11-12T12:16:28.325272+00:00"
+  },
+  {
+    "raw_record": "{\"transaction_id\": \"TX_START_INV_d6d3bae4a011\", \"customer_id\": \"CUST_6896\", \"amount\": 78.52, \"currency\": \"USD\", \"status\": \"COMPLETED\", \"payment_method\": \"CREDIT_CARD\", \"transaction_timestamp\": \"2026-11-02T20:53:40Z\"}",
+    "rejection_reason": "MISSING_REQUIRED_FIELD",
+    "error_details": "Missing required fields: ['merchant_id']",
+    "run_id": "2400bd71-47d5-4790-84fa-e62c7fc1bb69",
+    "source_file": "starter_batch.json",
+    "rejected_at": "2026-11-12T12:16:28.325272+00:00"
+  },
+  {
+    "raw_record": "{\"transaction_id\": \"TX_START_INV_1ba19627c695\", \"customer_id\": \"CUST_2387\", \"amount\": 75.24, \"currency\": \"USD\", \"status\": \"COMPLETED\", \"payment_method\": \"CREDIT_CARD\", \"transaction_timestamp\": \"2026-11-03T12:15:55Z\"}",
+    "rejection_reason": "MISSING_REQUIRED_FIELD",
+    "error_details": "Missing required fields: ['merchant_id']",
+    "run_id": "2400bd71-47d5-4790-84fa-e62c7fc1bb69",
+    "source_file": "starter_batch.json",
+    "rejected_at": "2026-11-12T12:16:28.325272+00:00"
+  },
+  {
+    "raw_record": "{\"transaction_id\": \"TX_START_INV_f6572c660b69\", \"merchant_id\": \"MERC_0009\", \"customer_id\": \"CUST_2025\", \"amount\": 61.96, \"currency\": \"FAKE_CURRENCY\", \"status\": \"COMPLETED\", \"payment_method\": \"CREDIT_CARD\", \"transaction_timestamp\": \"2026-11-02T07:16:55Z\"}",
+    "rejection_reason": "INVALID_CURRENCY",
+    "error_details": "1 validation error for RawTransaction\ncurrency\n  Value error, currency must be one of {'USD', 'EUR', 'JPY', 'CAD', 'GBP', 'AUD'}, got FAKE_CURRENCY [type=value_error, input_value='FAKE_CURRENCY', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error",
+    "run_id": "2400bd71-47d5-4790-84fa-e62c7fc1bb69",
+    "source_file": "starter_batch.json",
+    "rejected_at": "2026-11-12T12:16:28.326271+00:00"
+  },
+  {
+    "raw_record": "{\"transaction_id\": \"TX_START_INV_86b94ad0f029\", \"merchant_id\": \"MERC_0009\", \"customer_id\": \"CUST_4534\", \"amount\": -20.87, \"currency\": \"USD\", \"status\": \"COMPLETED\", \"payment_method\": \"CREDIT_CARD\", \"transaction_timestamp\": \"2026-11-01T09:50:06Z\"}",
+    "rejection_reason": "INVALID_AMOUNT",
+    "error_details": "1 validation error for RawTransaction\namount\n  Value error, amount must be strictly positive (> 0.0), got -20.87 [type=value_error, input_value=-20.87, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error",
+    "run_id": "2400bd71-47d5-4790-84fa-e62c7fc1bb69",
+    "source_file": "starter_batch.json",
+    "rejected_at": "2026-11-12T12:16:28.326271+00:00"
+  },
+  {
+    "raw_record": "{\"transaction_id\": \"TX_START_42_00000369\", \"merchant_id\": \"MERC_0005\", \"customer_id\": \"CUST_2817\", \"amount\": 424.01, \"currency\": \"GBP\", \"status\": \"COMPLETED\", \"payment_method\": \"WIRE_TRANSFER\", \"transaction_timestamp\": \"2026-11-04T13:25:52Z\"}",
+    "rejection_reason": "DUPLICATE_KEY",
+    "error_details": "Duplicate transaction_id 'TX_START_42_00000369' detected",
+    "run_id": "2400bd71-47d5-4790-84fa-e62c7fc1bb69",
+    "source_file": "starter_batch.json",
+    "rejected_at": "2026-11-12T12:16:28.326271+00:00"
+  },
+  {
+    "raw_record": "{\"transaction_id\": \"TX_START_INV_085008ef4500\", \"merchant_id\": \"MERC_DOES_NOT_EXIST_9999\", \"customer_id\": \"CUST_8869\", \"amount\": 27.97, \"currency\": \"USD\", \"status\": \"COMPLETED\", \"payment_method\": \"CREDIT_CARD\", \"transaction_timestamp\": \"2026-11-01T12:45:42Z\"}",
+    "rejection_reason": "FOREIGN_KEY_VIOLATION",
+    "error_details": "Merchant 'MERC_DOES_NOT_EXIST_9999' does not exist in active reference directory",
+    "run_id": "2400bd71-47d5-4790-84fa-e62c7fc1bb69",
+    "source_file": "starter_batch.json",
+    "rejected_at": "2026-11-12T12:16:28.326271+00:00"
+  },
+  {
+    "raw_record": "{\"transaction_id\": \"TX_START_42_00000332\", \"merchant_id\": \"MERC_0010\", \"customer_id\": \"CUST_2342\", \"amount\": 239.42, \"currency\": \"USD\", \"status\": \"COMPLETED\", \"payment_method\": \"ACH\", \"transaction_timestamp\": \"2026-11-02T00:52:45Z\"}",
+    "rejection_reason": "DUPLICATE_KEY",
+    "error_details": "Duplicate transaction_id 'TX_START_42_00000332' detected",
+    "run_id": "2400bd71-47d5-4790-84fa-e62c7fc1bb69",
+    "source_file": "starter_batch.json",
+    "rejected_at": "2026-11-12T12:16:28.326271+00:00"
+  },
+  {
+    "raw_record": "{\"transaction_id\": \"TX_START_42_00000461\", \"merchant_id\": \"MERC_0007\", \"customer_id\": \"CUST_1944\", \"amount\": 128.5, \"currency\": \"CAD\", \"status\": \"COMPLETED\", \"payment_method\": \"WIRE_TRANSFER\", \"transaction_timestamp\": \"2026-11-02T04:04:23Z\"}",
+    "rejection_reason": "DUPLICATE_KEY",
+    "error_details": "Duplicate transaction_id 'TX_START_42_00000461' detected",
+    "run_id": "2400bd71-47d5-4790-84fa-e62c7fc1bb69",
+    "source_file": "starter_batch.json",
+    "rejected_at": "2026-11-12T12:16:28.326271+00:00"
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "run_id": "2400bd71-47d5-4790-84fa-e62c7fc1bb69",
+  "batch_id": "batch_starter_batch",
+  "start_time": "2026-11-12T12:16:28.311702+00:00",
+  "end_time": "2026-11-12T12:16:28.346682+00:00",
+  "duration_ms": 34.78,
+  "input_records_count": 500,
+  "valid_records_count": 486,
+  "rejected_records_count": 14,
+  "published_records_count": 486,
+  "deduped_records_count": 0,
+  "partitions_affected": [
+    "2026-11-01",
+    "2026-11-02",
+    "2026-11-03",
+    "2026-11-04",
+    "2026-11-05"
+  ],
+  "status": "PARTIAL_SUCCESS",
+  "error_summary": null,
+  "quarantine_breakdown": {
+    "INVALID_TIMESTAMP": 1,
+    "DUPLICATE_KEY": 5,
+    "INVALID_CURRENCY": 2,
+    "FOREIGN_KEY_VIOLATION": 3,
+    "MISSING_REQUIRED_FIELD": 2,
+    "INVALID_AMOUNT": 1
+  }
+}

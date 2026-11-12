@@ -1,0 +1,23 @@
+{
+  "run_id": "63b3b951-d97c-41ea-b5cd-b1e9ffc91d37",
+  "batch_id": "batch_starter_batch",
+  "start_time": "2026-11-12T12:16:28.492762+00:00",
+  "end_time": "2026-11-12T12:16:28.570213+00:00",
+  "duration_ms": 77.75,
+  "input_records_count": 500,
+  "valid_records_count": 0,
+  "rejected_records_count": 500,
+  "published_records_count": 0,
+  "deduped_records_count": 0,
+  "partitions_affected": [],
+  "status": "FAILED",
+  "error_summary": "All records in batch were rejected by validation.",
+  "quarantine_breakdown": {
+    "DUPLICATE_KEY": 491,
+    "INVALID_TIMESTAMP": 1,
+    "INVALID_CURRENCY": 2,
+    "FOREIGN_KEY_VIOLATION": 3,
+    "MISSING_REQUIRED_FIELD": 2,
+    "INVALID_AMOUNT": 1
+  }
+}
